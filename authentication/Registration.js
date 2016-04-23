@@ -48,7 +48,7 @@ if(Meteor.isClient){
 	Template.google.events({
 		'click a': function (e) {
 			e.preventDefault;
-			console.log("hi")
+			
 			Meteor.loginWithGoogle({requestPermissions: ['email']}, function(error){
 			  if (error) {
 			    console.log(error);
