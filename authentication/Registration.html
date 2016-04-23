@@ -1,0 +1,22 @@
+<template name="register">
+   <div class="RegLog">
+    <h2>Register</h2>
+    <form class="register">
+        <p>Name: <input type="name" name="name"></p>
+        <p>Email: <input type="email" name="email" required></p>
+        <p>Password: <input type="password" name="password" required></p>
+        <p><button type="submit" class="btn btn-default">Submit</button></p>
+                 {{> facebook}}
+                 {{> google}}
+        
+    </form>
+    </div>
+</template>
+
+<template name="facebook">
+	<a href="#" class="btn btn-primary"><span class="fa fa-facebook"></span> Facebook</a>
+</template>
+
+<template name="google">
+     <a href="#" class="btn btn-danger"><span class="fa fa-google-plus"></span> Google</a>
+</template>

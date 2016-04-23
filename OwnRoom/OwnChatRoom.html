@@ -1,0 +1,31 @@
+<template name="OwnRoom">
+	
+	{{> messageRoom}}
+</template>
+
+
+<template  name="messageRoom">
+
+  <div id="trytry2">
+	<table id="chat" class="table table-striped">
+       		 <tbody>
+       		 {{#each messages}}
+		 <tr>
+	              <td>{{name}} :</td>
+	              <td>{{message}}</td>
+	            </tr>
+	            {{/each}}
+	            <tr>
+            <td colspan="2">
+   	{{#if currentUser}}
+                <input type="text" id="RoomMessage" name="text">
+                <button id="addMessage" class="btn btn-primary pull-right">
+                  <i class="icon-envelope"></i> Send message
+                </button>
+          {{/if}}
+            </td>
+          </tr>
+	               </tbody>
+      	</table>
+	</div>
+</template>

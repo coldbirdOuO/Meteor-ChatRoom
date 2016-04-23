@@ -1,0 +1,65 @@
+<template name="addRoom">
+	<input type="text" id="addRoomName" name="name" placeholder="Enter your chatroom name">
+            <button type="submit" class="btn btn-primary pull-right">
+              <i class="icon-plus"></i> Create Room
+            </button>
+</template>
+
+<template name="Rooms">
+<div id="trytry">
+   <table id="rooms" class="table table-striped span6">
+      <thead>
+        <tr>
+          <th>Room Name</th>
+          <th>Members online</th>
+          <th>Last activity</th>
+        </tr>
+      </thead>
+        <tbody>
+	{{#each rooms}}
+	   {{> RoomDetail}}
+	{{/each}}
+          <tr>
+          <td colspan="3">
+          {{#if currentUser}}
+            {{> delRoom}}
+            {{> addRoom}}
+          {{/if}}
+          </td>
+          </tr>
+           <tr>
+          	   
+          </tr>
+      </tbody>
+    </table>
+</div>
+
+</template>
+
+<template name="delRoom">
+           <button type="submit" id="out" class="btn btn-danger pull-right">
+              <i class="icon-minus"></i> Delete the Room
+            </button>
+</template>
+
+<template name="RoomDetail">
+ 	<tr>
+	    <th>
+	      <li class="{{checked}}">
+		<input type="checkbox" {{checked}}>
+		<a href="/room/{{_id}}" class="{{picked}}">{{name}}</a>
+            </li>
+	   </th>
+	   <th>
+            {{#if onlinePeople}}
+	   	   {{onlinePeople}}
+            {{else}}
+                0
+            {{/if}}
+	   </th>
+
+	   <th>
+	   	{{calculateTime}}
+          </th>
+  	</tr>
+</template>
