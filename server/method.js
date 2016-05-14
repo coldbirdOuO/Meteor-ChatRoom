@@ -8,7 +8,7 @@ Meteor.methods ({
 	  		  	name: name,
 			             scomplete: false,
 			  	date: new Date(),
-			              recentDate: new Date().getHours
+			             recentDate: new Date().getHours
 			 })
 		}
 	},
