@@ -1,7 +1,7 @@
 # Meteor-ChatRoom
 ####使用Meteor.js寫出的多房間聊天室，使用者登入後可以新增房間，每個房間都是一個多人聊天室
 
-#使用方法
+##使用方法
 請先安裝meteor.js
 > curl https://install.meteor.com/ | sh
 
