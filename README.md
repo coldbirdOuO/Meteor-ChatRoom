@@ -12,3 +12,7 @@
 打開終端機，在檔案目錄下，輸入meteor
 > meteor
 
+![](https://raw.githubusercontent.com/coldbirdOuO/Meteor-ChatRoom/master/%E6%93%B7%E5%8F%96%E9%81%B8%E5%8F%96%E5%8D%80%E5%9F%9F_010.png)  
+
+  
+![](https://raw.githubusercontent.com/coldbirdOuO/Meteor-ChatRoom/master/%E6%93%B7%E5%8F%96%E9%81%B8%E5%8F%96%E5%8D%80%E5%9F%9F_011.png)
