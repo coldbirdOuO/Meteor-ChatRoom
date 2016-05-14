@@ -6,7 +6,7 @@
 > curl https://install.meteor.com/ | sh
 
 下載此專案
-> https://github.com/coldbirdOuO/Meteor-ChatRoom.git
+> git clone https://github.com/coldbirdOuO/Meteor-ChatRoom.git
 
 打開終端機，在檔案目錄下，輸入meteor
 > meteor
